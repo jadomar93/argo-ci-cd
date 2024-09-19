@@ -52,14 +52,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: dev-artemis.jadomars.com
+    - host: artemis.jadomars.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-   - secretName: dev-artemis-tls
+   - secretName: artemis-tls
      hosts:
-       - dev-artemis.jadomars.com
+       - artemis.jadomars.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
